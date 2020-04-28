@@ -9,6 +9,7 @@ class PageFactory
 
   # Gets page instance by name.
   # @param name value.
+  # @return selected class instance.
   def get_page(name)
     if name.eql? 'Women'
       women_page

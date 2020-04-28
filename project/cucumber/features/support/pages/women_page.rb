@@ -3,6 +3,8 @@
 require 'capybara'
 require_relative 'sales_page'
 
+# Gets singleton women_page instance.
+# Gets women_page instance.
 def women_page
   women_page ||= WomenPage.new
 end

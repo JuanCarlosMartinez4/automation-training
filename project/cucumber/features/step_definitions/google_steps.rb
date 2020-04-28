@@ -3,12 +3,12 @@
 require 'capybara'
 require 'selenium-webdriver'
 
-# Goes to some page.
+# Goes to some page by name.
 Given(/^I go to "([^"]*)"$/) do |page|
   navigate_to(page)
 end
 
-# Sets values on search box.
+# Sets values on search textbox.
 And(/^I set "([^"]*)"$/) do |word|
   page.driver.browser.manage.window.maximize
   page.find(:css, 'input[title=Buscar]').set(word)

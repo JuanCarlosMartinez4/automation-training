@@ -2,6 +2,8 @@
 
 require 'capybara'
 
+# Gets singleton sales_page instance.
+# Gets sales_page instance.
 def sales_page
   @sales_page ||= SalesPage.new
 end
