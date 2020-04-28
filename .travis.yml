@@ -21,5 +21,7 @@ before_script:
   - unzip chromedriver_linux64.zip -d ~/bin
 
 script:
+  - cd project
+  - cd cucumber
   - cucumber features
   - cucumber --format html --out reports/reports.html
