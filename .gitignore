@@ -57,3 +57,6 @@ build-iPhoneSimulator/
 
 #.idea
 .idea
+
+# reports
+project/cucumber/reports/
