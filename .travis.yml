@@ -1,8 +1,19 @@
+sudo: required
+dist: trusty
 language: ruby
-cache: bundler
+rvm:
+  - 2.6.5
 
 gemfile:
-  - Gemfile
+  - project/cucumber/Gemfile
 
 before_install:
+  - gem install ffi -f
+  - gem install rspec-expectations
   - gem install bundler
+
+script:
+  - cd project
+  - cd cucumber
+  - cucumber features
+  - cucumber --format html --out reports/reports.html
