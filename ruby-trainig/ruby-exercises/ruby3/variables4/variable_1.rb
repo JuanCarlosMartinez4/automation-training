@@ -8,6 +8,7 @@ def test_local_variables
   puts addition_of_values
 end
 
+# Main menu to test the exercise.
 # adding puts at the beginning of the method print its value.
 puts test_local_variables
 

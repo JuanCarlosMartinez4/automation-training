@@ -32,7 +32,10 @@ profile.add_item('Maria', 'Hello')
 profile.add_item('Juan', 'World')
 profile.add_item('Julia', 'Nice')
 
+# Prints the key of last user.
 p profile.users.keys.last
+
+# Prints the key of last user.
 p profile.users.values.last
 
 # Singleton allows to use only one instance,

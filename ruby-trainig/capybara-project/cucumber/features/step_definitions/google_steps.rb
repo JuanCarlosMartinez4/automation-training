@@ -10,7 +10,7 @@ And(/^I set "([^"]*)"$/) do |word|
   WORD = word
 end
 
-# Start to search the request.
+# Starts to search the request.
 When(/^I send the request$/) do
   page.first(:css, 'input[name=btnK]').click
 end
