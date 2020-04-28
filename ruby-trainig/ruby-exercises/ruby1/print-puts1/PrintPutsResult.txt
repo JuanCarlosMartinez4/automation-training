@@ -1,0 +1,8 @@
+D:\Ruby\task1>PrintPuts
+hello
+worldThis
+IsRuby
+TrainingExercise
+Automation
+Testing
+April2020

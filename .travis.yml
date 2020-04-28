@@ -1,0 +1,11 @@
+language: ruby
+cache: bundler
+
+os:
+  - windows
+
+gemfile:
+  - Gemfile
+
+before_install:
+  - gem install bundler
