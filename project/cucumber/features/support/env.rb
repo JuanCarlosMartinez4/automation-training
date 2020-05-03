@@ -20,7 +20,7 @@ AfterConfiguration do
     Capybara.default_driver = :selenium
     Capybara.run_server = false
     Capybara.app_host = default_host
-    Capybara.javascript_driver = :selenium
+    Capybara.javascript_driver = :headless_chrome
     Capybara.default_max_wait_time = default_wait
   end
 
