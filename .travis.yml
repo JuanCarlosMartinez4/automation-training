@@ -11,7 +11,6 @@ before_install:
   - gem install ffi -f
   - gem install rspec-expectations
   - gem install bundler:2.1.4
-  - google-chrome-stable --headless --disable-gpu
 
 addons:
   chrome: stable
