@@ -20,7 +20,7 @@ AfterConfiguration do
     Capybara.default_driver = :selenium
     Capybara.run_server = false
     Capybara.app_host = default_host
-    Capybara.javascript_driver = :selenium
+    Capybara.javascript_driver = :headless_chrome
     Capybara.default_max_wait_time = default_wait
   end
 
@@ -28,5 +28,13 @@ AfterConfiguration do
     Capybara.register_driver :selenium do |app|
       Capybara::Selenium::Driver.new(app, browser: driver.to_sym)
     end
+  end
+  Capybara.register_driver :headless_chrome do |app|
+    capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
+      chromeOptions: { args: %w[headless disable-gpu no-sandbox disable-dev-shm-usage]}
+    )
+    Capybara::Selenium::Driver.new app,
+                                   browser: :chrome,
+                                   desired_capabilities: capabilities
   end
 end
